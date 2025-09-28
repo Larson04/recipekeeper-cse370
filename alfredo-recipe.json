@@ -1,0 +1,109 @@
+{
+    "overview":{
+        "title": "Alfredo Sauce",
+        "courses": "Main Dish",
+        "categories": ["Sauce", "Italian"],
+        "source": "https://thecozycook.com/olive-garden-alfredo-sauce/",
+        "serving-size": 6,
+        "preparation-time": "5 minutes",
+        "cooking-time": "15 minutes"
+    },
+    "ingredients": {
+        "salted-butter": {
+            "amount": 6,
+            "unit": "tablespoons",
+            "note": ""
+        },
+        "garlic": {
+            "amount": 1,
+            "unit": "tablespoons",
+            "note": "minced"
+        },
+        "flour": {
+            "amount": 2,
+            "unit": "tablespoons",
+            "note": ""
+        },
+        "heavy-cream": {
+            "amount": 1.5,
+            "unit": "cups",
+            "note": ""
+        },
+        "whole-milk":{
+            "amount": 1.5,
+            "unit": "cups",
+            "note": "1% or 2% can be used if needed"
+        },
+        "parmesan-cheese": {
+            "amount": 0.5,
+            "unit": "cups",
+            "note": "grated and at room temperature"
+        },
+        "romano-cheese": {
+            "amount": 0.5,
+            "unit": "cups",
+            "note": "grated and at room temperature"
+        },
+        "salt-and-pepper": {
+            "amount": "to taste",
+            "unit": "",
+            "note": ""
+        },
+        "fettuccine-pasta": {
+            "amount": 1,
+            "unit": "pounds",
+            "note": ""
+        },
+        "parsley":{
+            "amount": 0,
+            "unit": "",
+            "note": "to garnish"
+        }
+    },
+    "directions":["1. Boil the fettuccine according to package instructions. As the water preheats, begin the sauce.",
+                  "2. Melt the butter in a large saucepan over medium heat. Add the garlic and cook for 1 minute.",
+                  "3. Whisk in the flour and cook for 1 minute, stirring continuously.",
+                  "4. Add the heavy cream in splashes, stirring continuously. Add the milk in the same manner.",
+                  "5. Bring to a gentle bubble, then reduce heat to low to bubble. It will continue to thicken as it simmers.",
+                  "6. Slowly stir in the cheese. Taste and season with salt/pepper if desired.",
+                  "7. Drain the pasta and carefully mix it into the sauce until well incorporated. The pasta will absorb the sauce and it will continue to thicken.",
+                  "8. Garnish with chopped parsley and serve!"],
+    "notes": "",
+    "nutrition":{
+        "serving-size": "1 serving",
+        "calories": 624,
+        "total-fat":{
+            "amount": 33,
+            "unit": "g"
+        },
+        "saturated-fat":{
+            "amount": 20,
+            "unit": "g"
+        },
+        "cholesterol":{
+            "amount": 153,
+            "unit": "mg"
+        },
+        "sodium":{
+            "amount": 399,
+            "unit": "mg"
+        },
+        "total-carbohydrates":{
+            "amount": 62,
+            "unit": "g"
+        },
+        "dietary-fiber":{
+            "amount": 3,
+            "unit": "g"
+        },
+        "sugars":{
+            "amount": 2,
+            "unit": "g"
+        },
+        "protein":{
+            "amount": 20,
+            "unit": "g"
+        }
+    }
+
+}

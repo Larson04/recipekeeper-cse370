@@ -1,0 +1,80 @@
+{
+    "overview":{
+        "title": "Cake Mix Cookies",
+        "courses": "Dessert",
+        "categories": ["Cookies", "Cake", "Chocolate"],
+        "source": "",
+        "serving-size": 8,
+        "preparation-time": "10 minutes",
+        "cooking-time": "10 minutes"
+    },
+    "ingredients": {
+        "cake-mix": {
+            "amount": 1,
+            "unit": "box",
+            "note": ""
+        },
+        "water": {
+            "amount": 1,
+            "unit": "tablespoon",
+            "note": ""
+        },
+        "egg": {
+            "amount": 1,
+            "unit": "",
+            "note": ""
+        },
+        "butter": {
+            "amount": 1,
+            "unit": "cube",
+            "note": "softened"
+        },
+        "chocolate-chips": {
+            "amount": 1,
+            "unit": "cups",
+            "note": ""
+        }
+    },
+    "directions":["1. Preheat the oven to 350 degrees F.",
+                  "2. In a large bowl, combine the cake mix, water, egg, butter, and chocolate chips. Mix until smooth.",
+                  "3. Drop by rounded spoonfuls onto ungreased pans.",
+                  "4. Bake for 9 minutes.",
+                  "5. Let cool on pan for 5 minutes."],
+     "notes": "",
+    "nutrition":{
+        "serving-size": "",
+        "calories": 0,
+        "total-fat":{
+            "amount": 0,
+            "unit": "g"
+        },
+        "saturated-fat":{
+            "amount": 0,
+            "unit": "g"
+        },
+        "cholesterol":{
+            "amount": 0,
+            "unit": "mg"
+        },
+        "sodium":{
+            "amount": 0,
+            "unit": "mg"
+        },
+        "total-carbohydrates":{
+            "amount": 0,
+            "unit": "g"
+        },
+        "dietary-fiber":{
+            "amount": 0,
+            "unit": "g"
+        },
+        "sugars":{
+            "amount": 0,
+            "unit": "g"
+        },
+        "protein":{
+            "amount": 0,
+            "unit": "g"
+        }
+    }
+}
