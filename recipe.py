@@ -17,10 +17,6 @@ def recipe_multi(PATH, Multiplier):
         if details['note']:  # only add if it's not an empty string
             ingredients[i].append(details['note'])
         i += 1
-
-        #print(f"{name}: {details['amount']} {details['unit']}, {details['note']}")
     print(ingredients)
-
-
 
 recipe_multi("alfredo-recipe.json", 1)
