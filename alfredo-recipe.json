@@ -45,9 +45,9 @@
             "note": "grated and at room temperature"
         },
         "salt-and-pepper": {
-            "amount": "to taste",
+            "amount": 0,
             "unit": "",
-            "note": ""
+            "note": "to taste"
         },
         "fettuccine-pasta": {
             "amount": 1,
