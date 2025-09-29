@@ -1,7 +1,13 @@
 import json
+import sys
 
 #hello there
 def recipe_multi(PATH, Multiplier):
+    if not isinstance(PATH, str): 
+        sys.exit("Improper file path argument: " + str((PATH)))
+    if not isinstance(Multiplier, (int, float)): 
+        sys.exit("Improper multiplier argument: " + str((Multiplier)))
+    
     #open le json
     with open(PATH, 'r') as file:
         data = json.load(file)
@@ -17,6 +23,6 @@ def recipe_multi(PATH, Multiplier):
         if details['note']:  # only add if it's not an empty string
             ingredients[i].append(details['note'])
         i += 1
-    print(ingredients)
+    #print(ingredients)
 
 recipe_multi("alfredo-recipe.json", 1)
