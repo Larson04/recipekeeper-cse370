@@ -23,6 +23,12 @@ def recipe_multi(PATH, Multiplier):
         if details['note']:  # only add if it's not an empty string
             ingredients[i].append(details['note'])
         i += 1
-    #print(ingredients)
+    #items have been parsed
+    #list format: [[ingredient, quantity, unit, note], [repeat previous]]
+    #print(ingredients) #debug line
+    for i in ingredients:
+        if isinstance(Multiplier, (int, float)):
+            i[1] = i[1] * Multiplier
+    print(ingredients)
 
-recipe_multi("alfredo-recipe.json", 1)
+recipe_multi("alfredo-recipe.json", 3)
