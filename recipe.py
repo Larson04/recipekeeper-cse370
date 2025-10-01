@@ -2,7 +2,7 @@ import json
 import sys
 
 #hello there
-def recipe_multi(PATH, Multiplier):
+def recipe_multi(PATH, Multiplier=1):
     if not isinstance(PATH, str): 
         sys.exit("Improper file path argument: " + str((PATH)))
     if not isinstance(Multiplier, (int, float)): 
@@ -30,5 +30,6 @@ def recipe_multi(PATH, Multiplier):
         if isinstance(Multiplier, (int, float)):
             i[1] = i[1] * Multiplier
     print(ingredients)
+    return ingredients
 
-recipe_multi("alfredo-recipe.json", 3)
+# recipe_multi("alfredo-recipe.json", 3)
