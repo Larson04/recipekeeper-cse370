@@ -4,6 +4,7 @@ import math
 def convert(unit_type, amount):
     new_amount = convert_to_tsp(unit_type, amount)
     final_measurement = convert_to_nearest(new_amount)
+    print(final_measurement)
     return final_measurement
 
 def convert_to_tsp(unit_type, amount):

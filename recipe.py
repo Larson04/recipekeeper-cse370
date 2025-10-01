@@ -34,7 +34,29 @@ def recipe_multi(PATH, Multiplier=1):
                 i[1] = i[1] * Multiplier
         if len(i) >= 3:
             if isinstance(i[2], (str)) and isinstance(i[1], (int, float)):
-                convert(i[2], i[1])
+                unit = convert(i[2], i[1])
+                if sum(1 for x in unit if x != 0) >= 2:
+                    ...
+                else:
+                    for x in range(5):
+                        if unit[x] != 0:
+                            if x == 1:
+                                i[2] = "gallons"
+                                i[1] = unit[x]
+                            if x == 2:
+                                i[2] = "quarts"
+                                i[1] = unit[x]
+                            if x == 3:
+                                i[2] = "cups"
+                                i[1] = unit[x]
+                            if x == 4:
+                                i[2] = "tablespoons"
+                                i[1] = unit[x]
+                            if x == 5:
+                                i[2] = "teaspoons"
+                                i[1] = unit[x]
+                            break
+
     print(ingredients)
 
-recipe_multi("cake-mix-cookies-recipe.json", 4)
+recipe_multi("alfredo-recipe.json", 4)
