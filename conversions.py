@@ -29,6 +29,9 @@ def convert_to_nearest(amount):
     remainder = remainder % 12
     tbsp = math.floor(remainder/3)
     tsp = remainder % 3
+    # if (tsp > 0):
+    #     tsp += tbsp * 3
+    #     tbsp = 0
     return [gal, qt, cup, tbsp, tsp]
 
 # print(convert("tsp", 546))
