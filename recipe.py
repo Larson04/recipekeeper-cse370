@@ -1,5 +1,6 @@
 import json
 import sys
+from conversions import convert
 
 #hello there
 def recipe_multi(PATH, Multiplier):
@@ -27,8 +28,10 @@ def recipe_multi(PATH, Multiplier):
     #list format: [[ingredient, quantity, unit, note], [repeat previous]]
     #print(ingredients) #debug line
     for i in ingredients:
+        #print(i)
         if isinstance(Multiplier, (int, float)):
             i[1] = i[1] * Multiplier
+        #convert(i[2], i[1])
     print(ingredients)
 
 recipe_multi("alfredo-recipe.json", 3)
