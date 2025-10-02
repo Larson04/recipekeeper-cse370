@@ -26,7 +26,7 @@
         },
         "butter": {
             "amount": 1,
-            "unit": "cube",
+            "unit": "stick",
             "note": "softened"
         },
         "chocolate-chips": {
