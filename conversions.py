@@ -9,15 +9,15 @@ def convert(unit_type, amount):
 
 def convert_to_tsp(unit_type, amount):
     match unit_type:
-        case "tablespoon":
+        case "tablespoons":
             amount *= 3
-        case "cup":
+        case "cups":
             amount *= 48
-        case "pint":
+        case "pints":
             amount *= 96
-        case "quart":
+        case "quarts":
             amount *= 192
-        case "gallon":
+        case "gallons":
             amount *= 768
     return amount
 

@@ -36,23 +36,29 @@ def recipe_multi(PATH, Multiplier=1):
             if isinstance(i[2], (str)) and isinstance(i[1], (int, float)):
                 unit = convert(i[2], i[1])
                 if sum(1 for x in unit if x != 0) >= 2:
-                    ...
+                    if not unit[3] + unit[4] == 0:
+                        i[2] = "teaspoons"
+                        i[1] = unit[4] + unit[3] * 3
+                    #else do this and turn into cups
+                    else:
+                        i[2] = "cups"
+                        i[1] = (unit[0] * 16) + (unit[1] * 2) + unit[2]
                 else:
                     for x in range(5):
                         if unit[x] != 0:
-                            if x == 1:
+                            if x == 0:
                                 i[2] = "gallons"
                                 i[1] = unit[x]
-                            if x == 2:
+                            if x == 1:
                                 i[2] = "quarts"
                                 i[1] = unit[x]
-                            if x == 3:
+                            if x == 2:
                                 i[2] = "cups"
                                 i[1] = unit[x]
-                            if x == 4:
+                            if x == 3:
                                 i[2] = "tablespoons"
                                 i[1] = unit[x]
-                            if x == 5:
+                            if x == 4:
                                 i[2] = "teaspoons"
                                 i[1] = unit[x]
                             break
