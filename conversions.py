@@ -1,24 +1,33 @@
 import math
 
-# returns amount in measurements of [gallons, quarts, cups, tablespoons, teaspoons]
+## returns amount in measurements of [gallons, quarts, cups, tablespoons, teaspoons]
 def convert(unit_type, amount):
+    unit_type = standardize_units(unit_type)
     new_amount = convert_to_tsp(unit_type, amount)
+    if new_amount == None:
+        print("invalid unit type, conversion failed")
+        return amount
     final_measurement = convert_to_nearest(new_amount)
     print(final_measurement)
     return final_measurement
 
+
 def convert_to_tsp(unit_type, amount):
     match unit_type:
-        case "tablespoons":
+        case "tbsp":
             amount *= 3
-        case "cups":
+        case "cup":
             amount *= 48
-        case "pints":
+        case "pt":
             amount *= 96
-        case "quarts":
+        case "qt":
             amount *= 192
-        case "gallons":
+        case "gal":
             amount *= 768
+        case "tsp":
+            pass
+        case _:
+            amount = None
     return amount
 
 def convert_to_nearest(amount):
@@ -35,4 +44,22 @@ def convert_to_nearest(amount):
     #     tbsp = 0
     return [gal, qt, cup, tbsp, tsp]
 
-# print(convert("tsp", 546))
+## Converts unit
+def standardize_units(unit_type):
+    if unit_type in "tablespoons" :
+            new_unit = "tbsp"
+    elif unit_type in "cups":
+            new_unit = "cup"
+    elif unit_type in "pints":
+            new_unit = "pt"
+    elif unit_type in "quarts":
+            new_unit = "qt"
+    elif unit_type in "gallons":
+            new_unit = "gal"
+    elif unit_type in "teaspoons":
+            new_unit = "tsp"
+    else:
+         new_unit = unit_type
+    return new_unit
+
+# print(convert("tsp", 356))
