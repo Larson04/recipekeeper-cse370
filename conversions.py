@@ -8,7 +8,7 @@ def convert(unit_type, amount):
         print("invalid unit type, conversion failed")
         return amount
     final_measurement = convert_to_nearest(new_amount)
-    print(final_measurement)
+    # print(final_measurement)
     return final_measurement
 
 
