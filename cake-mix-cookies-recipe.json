@@ -16,7 +16,7 @@
         },
         "water": {
             "amount": 1,
-            "unit": "tablespoon",
+            "unit": "tbs",
             "note": ""
         },
         "egg": {
@@ -25,13 +25,13 @@
             "note": ""
         },
         "butter": {
-            "amount": 1,
-            "unit": "stick",
+            "amount": 8,
+            "unit": "tbs",
             "note": "softened"
         },
         "chocolate-chips": {
             "amount": 1,
-            "unit": "cups",
+            "unit": "c",
             "note": ""
         }
     },
