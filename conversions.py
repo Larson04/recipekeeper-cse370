@@ -4,19 +4,20 @@ import math
 def convert(unit_type, amount):
     new_amount = convert_to_tsp(unit_type, amount)
     final_measurement = convert_to_nearest(new_amount)
+    print(final_measurement)
     return final_measurement
 
 def convert_to_tsp(unit_type, amount):
     match unit_type:
-        case "tbsp":
+        case "tablespoons":
             amount *= 3
-        case "cup":
+        case "cups":
             amount *= 48
-        case "pt":
+        case "pints":
             amount *= 96
-        case "qt":
+        case "quarts":
             amount *= 192
-        case "gal":
+        case "gallons":
             amount *= 768
     return amount
 
@@ -29,6 +30,9 @@ def convert_to_nearest(amount):
     remainder = remainder % 12
     tbsp = math.floor(remainder/3)
     tsp = remainder % 3
+    # if (tsp > 0):
+    #     tsp += tbsp * 3
+    #     tbsp = 0
     return [gal, qt, cup, tbsp, tsp]
 
 # print(convert("tsp", 546))
