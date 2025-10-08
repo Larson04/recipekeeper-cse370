@@ -3,12 +3,7 @@ import sys
 from conversions import convert
 from fractions import Fraction
 
-def recipe_multi(PATH, targets_servings=None):
-    if not isinstance(PATH, str):
-        sys.exit("Improper file path argument: " + str((PATH)))
-    
-    with open(PATH, 'r') as file:
-        data = json.load(file)
+def recipe_multi(targets_servings=None):
     
     original_servings = data.get("servings", 1)
 
