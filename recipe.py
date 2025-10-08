@@ -35,6 +35,8 @@ def recipe_multi(PATH, Multiplier=1):
         if len(i) >= 3:
             if isinstance(i[2], (str)) and isinstance(i[1], (int, float)):
                 unit = convert(i[2], i[1])
+                if isinstance(unit, int):
+                    break
                 if sum(1 for x in unit if x != 0) >= 2:
                     if not unit[3] + unit[4] == 0:
                         i[2] = "teaspoons"

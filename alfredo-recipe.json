@@ -11,17 +11,17 @@
     "ingredients": {
         "salted-butter": {
             "amount": 6,
-            "unit": "tbs",
+            "unit": "tbsp",
             "note": ""
         },
         "garlic": {
             "amount": 1,
-            "unit": "tbs",
+            "unit": "tbsp",
             "note": "minced"
         },
         "flour": {
             "amount": 2,
-            "unit": "tbs",
+            "unit": "tbsp",
             "note": ""
         },
         "heavy-cream": {
