@@ -44,7 +44,7 @@ def convert_to_nearest(amount):
     #     tbsp = 0
     return [gal, qt, cup, tbsp, tsp]
 
-## Converts unit
+## Determines the unit type and formats appropriately
 def standardize_units(unit_type):
     if unit_type in "tablespoons" :
             new_unit = "tbsp"
