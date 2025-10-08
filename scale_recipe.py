@@ -3,6 +3,8 @@ import sys
 from conversions import convert
 from fractions import Fraction
 
+# receive the ingredients from the files and multiply them
+
 def recipe_multi(data, targets_servings=None):
     
     original_servings = data.get("servings", 1)
