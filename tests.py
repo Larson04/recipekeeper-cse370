@@ -6,7 +6,7 @@ convert measurement units correctly
 '''
 from recipe import recipe_multi
 
-def test_recipe_multi_1():
+def test_recipe_parsing_1():
     '''
     Test the recipe_multi function with a simple list of ingredients.
     The recipe is a JSON string with three ingredients: an egg, 2 tablespoons of flour, and 1 stick of butter.
@@ -17,11 +17,11 @@ def test_recipe_multi_1():
     assert recipe_multi(recipe) == expected
     print("test_recipe_multi_1 passed")
 
-def test_recipe_multi_2():
+def test_recipe_parsing_2():
     '''Test '''
 
 def run_tests():
-    test_recipe_multi_1()
+    test_recipe_parsing_1()
 
 
 run_tests()
