@@ -3,12 +3,12 @@ import sys
 from conversions import convert
 from fractions import Fraction
 
-def recipe_multi(targets_servings=None):
+def recipe_multi(data, targets_servings=None):
     
     original_servings = data.get("servings", 1)
 
     if targets_servings is None:
-        target_services = original_servings
+        targets_servings = original_servings
     
     multiplier = targets_servings / original_servings
 
