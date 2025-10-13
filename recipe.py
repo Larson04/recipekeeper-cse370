@@ -35,7 +35,7 @@ def recipe_multi(PATH, Multiplier=1):
         if len(i) >= 3:
             if isinstance(i[2], (str)) and isinstance(i[1], (int, float)):
                 unit = convert(i[2], i[1])
-                print(unit)
+                #print(unit)
                 if isinstance(unit, int):
                     break
                 if sum(1 for x in unit if x != 0) >= 2:
@@ -47,23 +47,18 @@ def recipe_multi(PATH, Multiplier=1):
                             if x == 0:
                                 i.insert(1, unit[x])
                                 i.insert(2, "gallons")
-                                print(i)
                             if x == 1:
                                 i.insert(1, unit[x])
                                 i.insert(2, "quarts")
-                                print(i)
                             if x == 2:
                                 i.insert(1, unit[x])
                                 i.insert(2, "cups")
-                                print(i)
                             if x == 3:
                                 i.insert(1, unit[x])
                                 i.insert(2, "tablespoons")
-                                print(i)
                             if x == 4:
                                 i.insert(1, unit[x])
                                 i.insert(2, "teaspoons")
-                                print(i)
     print(ingredients)
     return ingredients
 
