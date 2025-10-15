@@ -127,6 +127,4 @@ def recipe_multi(PATH, Multiplier = 1):
     print(ingredients)
     return ingredients
 
-# recipe_multi("alfredo-recipe.json", 3)
-
-recipe_multi("alfredo-recipe.json", 7)
+# recipe_multi("alfredo-recipe.json", 7)
