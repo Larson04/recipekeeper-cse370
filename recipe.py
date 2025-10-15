@@ -2,13 +2,9 @@ import json
 import sys
 from conversions import convert
 
-#hello there
-def recipe_multi(PATH, Multiplier=1):
+def get_ingredients(PATH):
     if not isinstance(PATH, str): 
         sys.exit("Improper file path argument: " + str((PATH)))
-    if not isinstance(Multiplier, (int, float)): 
-        sys.exit("Improper multiplier argument: " + str((Multiplier)))
-    
     #open le json
     with open(PATH, 'r') as file:
         data = json.load(file)
@@ -25,6 +21,13 @@ def recipe_multi(PATH, Multiplier=1):
             ingredients[i].append(details['note'])
         i += 1
     file.close()
+    return ingredients
+
+
+def recipe_multi(PATH, Multiplier = 1):
+    ingredients = get_ingredients(PATH)
+    if not isinstance(Multiplier, (int, float)): 
+        sys.exit("Improper multiplier argument: " + str((Multiplier)))
     #items have been parsed
     #list format: [[ingredient, quantity, unit, note], [repeat previous]]
     #print(ingredients) #debug line
