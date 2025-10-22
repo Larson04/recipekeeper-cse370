@@ -1,23 +1,18 @@
 {"ingredients": {
-    "salted-butter": {
-        "amount": 6,
-        "unit": "tbsp",
+    "egg": {
+        "amount": 1, 
+        "unit": "", 
         "note": ""
-    },
-    "garlic": {
-        "amount": 1,
-        "unit": "tbsp",
-        "note": "minced"
-    },
+    }, 
     "flour": {
-        "amount": 2,
-        "unit": "tbsp",
+        "amount": 2, 
+        "unit": "tablespoons", 
         "note": ""
-    },
-    "heavy-cream": {
-        "amount": 1.5,
-        "unit": "c",
-        "note": ""
+    }, 
+    "butter": {
+        "amount": 1, 
+        "unit": "stick", 
+        "note": "softened"
     }
     }
 }
