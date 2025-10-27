@@ -19,7 +19,7 @@ def test_recipe_parsing_1():
         ['flour', 2, 'tablespoons'], 
         ['butter', 1, 'stick', 'softened']]
     assert get_ingredients(recipe) == expected
-    print("test_recipe_multi_1 passed")
+    print("test_recipe_parsing_1 passed")
 
 def test_recipe_parsing_2():
     '''Test the get_ingredients function with a simple list of ingredients.
@@ -31,11 +31,11 @@ def test_recipe_parsing_2():
     recipe = "test2.json"
     expected = [
         ['salted-butter', 6, 'tbsp'], 
-        ['garlic', 1, 'tbsp', 'minced'], 
+        ['garlic', 1, 'tablespoon', 'minced'], 
         ['flour', 2, 'tbsp'], 
-        ['heavy-cream', 1.5, 'c']]
+        ['heavy-cream', 1.5, 'cup']]
     assert get_ingredients(recipe) == expected
-    print("test_recipe_multi_2 passed")
+    print("test_recipe_parsing_2 passed")
 
 def test_standardize_units_1():
     '''
@@ -45,10 +45,18 @@ def test_standardize_units_1():
     The expected output is a list of three lists, each containing the name, amount, and if they have them, unit, and 
     note of an ingredient.
     '''
+    unit = ["gallons", "quarts", "pints", "cups", "tablespoons", "teaspoons"]
+    expected = ["gal", "qt", "pt", "cup", "tbsp", "tsp"]
+    for x in range(len(unit)):
+        assert standardize_units(unit[x]) == expected[x]
+    print("test_standardize_units_1 passed")
+
+
 
 def run_tests():
     test_recipe_parsing_1()
     test_recipe_parsing_2()
+    test_standardize_units_1()
 
 
 run_tests()
